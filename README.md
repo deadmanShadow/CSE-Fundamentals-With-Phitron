@@ -4,8 +4,6 @@ Welcome to my practice repository for C programming! This repository serves as a
 
 ## Purpose
 
-The primary purpose of this repository is to practice and enhance my understanding of C programming concepts. By working on diverse projects and exercises, I aim to strengthen my grasp on:
-
 - Syntax and semantics of C.
 - Data structures and algorithms implemented in C.
 - Memory management techniques.
