@@ -1,5 +1,2 @@
-s 
-h 
-a 
-m 
-i 
+8 
+shamil
