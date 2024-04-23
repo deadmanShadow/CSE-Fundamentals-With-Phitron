@@ -13,12 +13,12 @@ int main()
         }
         else if (a[i] == '\0')
         {
-            printf("A is small");
+            printf("A is smaller");
             break;
         }
         else if (b[i] == '\0')
         {
-            printf("B is small");
+            printf("B is smaller");
             break;
         }
 
@@ -28,12 +28,12 @@ int main()
         }
         else if (a[i] < b[i])
         {
-            printf("A is small");
+            printf("A is smaller");
             break;
         }
         else
         {
-            printf("B is small");
+            printf("B is smaller");
             break;
         }
     }
