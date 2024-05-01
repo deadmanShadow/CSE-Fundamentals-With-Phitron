@@ -1,2 +1,1 @@
-main fun value - 0061FF1C
-fun value - 0061FF00
+500
