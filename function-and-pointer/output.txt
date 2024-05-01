@@ -1,9 +1,1 @@
-0th address -  0061FF0C
-0th address -  0061FF0C
-0th value -  10
-1st value -  20
-nxt -  20
-20
-20
-20
-20
+10 20 30 40 50 
