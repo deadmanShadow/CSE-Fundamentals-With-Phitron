@@ -1,6 +1,0 @@
-Main Start
-Hello Start
-World Start
-World End
-Hello End
-Main End
