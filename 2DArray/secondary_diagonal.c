@@ -20,7 +20,7 @@ int main()
     {
         for (int k = 0; k < col; k++)
         {
-            if (i == k)
+            if (i + k == row - 1)
             {
                 continue;
             }
@@ -32,7 +32,7 @@ int main()
     }
     if (flag == 1)
     {
-        printf("Primary Diagonal\n");
+        printf("Secondary Diagonal\n");
     }
     else
     {
