@@ -6,7 +6,7 @@ int main(){
     char c;
     int ascii = int(c);
    cin>>c; 
-    // cin>>a>>b>>c;
-    // cout<<a<<" "<<b<<endl;
+    cin>>a>>b>>c;
+    cout<<a<<" "<<b<<endl;
     cout<<int(c)<<endl;
 }
