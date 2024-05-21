@@ -19,5 +19,6 @@ int main(){
     Student* result = fun();
     // cout<<result.roll<<" "<<result.cls<<" "<<result.gpa<<endl;
     cout<<(*result).roll<<" "<<(*result).cls<<" "<<(*result).gpa<<endl;
+    delete result;
     return 0;
 }
