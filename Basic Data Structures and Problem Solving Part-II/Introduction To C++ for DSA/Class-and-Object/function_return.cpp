@@ -12,9 +12,8 @@ class Student{
     }
 };
 Student* fun(){
-    Student Rafi(3,6,4.33);
-    Student *p = &Rafi;
-    return p;
+    Student* Rafi = new Student(3,6,4.33);
+    return Rafi;
 }
 int main(){
     Student* result = fun();
