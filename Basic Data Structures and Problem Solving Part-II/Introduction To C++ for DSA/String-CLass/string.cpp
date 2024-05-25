@@ -13,8 +13,5 @@ int main(){
     {
         cout<<"Not Same"<<endl;
     }
-    
-    
-    
     return 0;
 }
