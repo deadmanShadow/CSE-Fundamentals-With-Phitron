@@ -1,2 +1,2 @@
- // string a = "Hello";
-    // string b = "World";
+ss >> word;
+    cout << word << endl;
