@@ -1,7 +1,4 @@
 3
-rakib khan
-10 95
-sifat khan
-8 77
-imam khan
-9 84
+rakib 10 95
+sifat 8 75
+imam 9 84
