@@ -1,6 +1,1 @@
-5
-rakib 10 95
-sifat 8 95
-imam 9 95
-ishmam 10 84
-Opi 7 77
+madam

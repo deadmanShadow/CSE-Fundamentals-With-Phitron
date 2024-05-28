@@ -37,11 +37,11 @@ int main()
     int n;
     cin >> n;
     Student a[n];
-    sort(a, a + n, cmp);
     for (int i = 0; i < n; i++)
     {
         cin >> a[i].name >> a[i].roll >> a[i].marks;
     }
+    sort(a, a + n, cmp);
     for (int i = 0; i < n; i++)
     {
         cout << a[i].name << " " << a[i].roll << " " << a[i].marks << endl;
