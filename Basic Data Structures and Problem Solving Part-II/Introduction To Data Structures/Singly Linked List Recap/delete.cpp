@@ -43,6 +43,12 @@ int size(Node *head)
     }
     return cnt;
 }
+void delete_head(Node *&head)
+{
+    Node *deleteFun = head;
+    head = head->next;
+    delete deleteFun;
+}
 int main()
 {
     Node *head = new Node(10);
@@ -60,6 +66,10 @@ int main()
     if (pos >= size(head))
     {
         cout << "Invalid Index" << endl;
+    }
+    else if (pos == 0)
+    {
+        delete_head(head);
     }
     else
     {
