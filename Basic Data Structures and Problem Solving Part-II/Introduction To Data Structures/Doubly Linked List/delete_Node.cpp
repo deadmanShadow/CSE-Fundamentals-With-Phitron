@@ -92,9 +92,24 @@ int main()
     b->prev = a;
     b->next = c;
     c->prev = b;
-    // Delete the head node
-    delete_head(head);
-    // delete_tail(tail);
+    int pos;
+    cin >> pos;
+    if (pos >= size(head))
+    {
+        cout << "Invalid" << endl;
+    }
+    else if (pos == 0)
+    {
+        delete_head(head);
+    }
+    else if (pos == size(head) - 1)
+    {
+        delete_tail(tail);
+    }
+    else
+    {
+        delete_at_position(head, pos);
+    }
     print_normal(head);
     print_reverse(tail);
     return 0;
