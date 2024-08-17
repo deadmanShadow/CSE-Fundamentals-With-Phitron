@@ -20,9 +20,9 @@ void post_order(Node *root)
     {
         return;
     }
-    cout << root->val << " ";
     post_order(root->left);
     post_order(root->right);
+    cout << root->val << " ";
 }
 int main()
 {
