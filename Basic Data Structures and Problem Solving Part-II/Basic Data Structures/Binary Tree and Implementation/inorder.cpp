@@ -21,8 +21,8 @@ void inorder(Node *root)
         return;
     }
     inorder(root->left);
-    inorder(root->right);
     cout << root->val << " ";
+    inorder(root->right);
 }
 int main()
 {
