@@ -61,7 +61,6 @@ int count_leaf(Node *root)
         int l =count_leaf(root->left);
         int r= count_leaf(root->right);
         return l+r;
-        
     }
 }
 int main()
