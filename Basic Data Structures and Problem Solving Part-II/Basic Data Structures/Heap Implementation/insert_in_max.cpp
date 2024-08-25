@@ -6,9 +6,7 @@ int main() {
   cin >> x;
   v.push_back(x);
   int cur_idx = v.size() - 1;
-  //   cout << cur_idx << endl;
   int parent_idx = (cur_idx - 1) / 2;
-  //   cout << parent_idx << endl;
   while (cur_idx != 0) {
     if (v[parent_idx] < v[cur_idx])
       swap(v[parent_idx], v[cur_idx]);
