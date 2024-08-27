@@ -1,6 +1,0 @@
-5
-Rahim 25 85
-Shanto 36 99
-Iqbal 44 50
-Sakib 12 33
-Mushfiq 5 95
