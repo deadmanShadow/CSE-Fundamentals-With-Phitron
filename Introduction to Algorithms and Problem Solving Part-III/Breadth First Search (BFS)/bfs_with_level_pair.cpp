@@ -39,6 +39,6 @@ int main() {
   int src;
   cin >> src;
   memset(vis, false, sizeof(vis));
-  bfs(src, 9);
+  bfs(src, 6);
   return 0;
 }
