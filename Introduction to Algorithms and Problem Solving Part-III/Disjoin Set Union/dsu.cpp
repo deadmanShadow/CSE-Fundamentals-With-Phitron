@@ -11,7 +11,9 @@ void dsu_init(int n) {
 }
 int find(int node) {
   if (par[node] == -1) return node;
-  return find(par[node]);
+  int leader = find(par[node]);
+  par[node] = leader;
+  return leader;
 }
 int main() {
   dsu_init(4);
