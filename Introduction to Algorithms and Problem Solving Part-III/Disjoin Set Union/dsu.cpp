@@ -2,11 +2,13 @@
 using namespace std;
 const int N = 1e5 + 5;
 int par[N];
-int groupd_size[N];
+int group_size[N];
+int level[N];
 void dsu_init(int n) {
   for (int i = 0; i < n; i++) {
     par[i] = -1;
-    groupd_size[i] = 1;
+    group_size[i] = 1;
+    level[i] = 0;
   }
 }
 int dsu_find(int node) {
@@ -20,15 +22,26 @@ void dsu_union(int n1, int n2) {
   int leaderB = dsu_find(n2);
   par[leaderA] = leaderB;
 }
+void dsu_union_by_level(int n1, int n2) {
+  int leaderA = dsu_find(n1);
+  int leaderB = dsu_find(n2);
+  if (level[leaderA] > level[leaderB]) {
+    par[leaderB] = leaderA;
+  } else if (level[leaderB] > level[leaderA]) {
+    par[leaderA] = leaderB;
+  } else {
+    par[leaderA] = leaderB;
+  }
+}
 void dsu_union_by_size(int n1, int n2) {
   int leaderA = dsu_find(n1);
   int leaderB = dsu_find(n2);
-  if (groupd_size[leaderA] > groupd_size[leaderB]) {
+  if (group_size[leaderA] > group_size[leaderB]) {
     par[leaderB] = leaderA;
-    groupd_size[leaderA] += groupd_size[leaderB];
+    group_size[leaderA] += group_size[leaderB];
   } else {
     par[leaderA] = leaderB;
-    groupd_size[leaderB] += groupd_size[leaderA];
+    group_size[leaderB] += group_size[leaderA];
   }
 }
 int main() {
