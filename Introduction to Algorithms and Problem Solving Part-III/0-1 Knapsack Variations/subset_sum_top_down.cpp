@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+bool dp[1005][1005];
 bool sub_set_sum(int n, int a[], int s) {
   if (n == 0) {
     if (s == 0)
@@ -7,12 +8,13 @@ bool sub_set_sum(int n, int a[], int s) {
     else
       return false;
   }
+  if (dp[n][s] != -1) return dp[n][s];
   if (a[n - 1] <= s) {
     bool op1 = sub_set_sum(n - 1, a, s - a[n - 1]);
     bool op2 = sub_set_sum(n - 1, a, s);
-    return op1 || op2;
+    return dp[n][s] = op1 || op2;
   } else {
-    return sub_set_sum(n - 1, a, s);
+    return dp[n][s] = sub_set_sum(n - 1, a, s);
   }
 };
 int main() {
