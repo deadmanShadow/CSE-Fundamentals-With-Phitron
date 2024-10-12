@@ -56,17 +56,17 @@ void merge_sort(int a[],int l,int r)
         merge_sort(a,l,mid);
         merge_sort(a,mid+1,r);
         merge(a,l,mid,r);
-        // cout<<"This"<<endl;
-        // for(int i=l;i<=mid;i++)
-        // {
-        //     cout<<a[i]<<" ";
-        // }
-        // cout<<endl;
-        // for(int i=mid+1;i<=r;i++)
-        // {
-        //     cout<<a[i]<<" ";
-        // }
-        // cout<<endl;
+        cout<<"This"<<endl;
+        for(int i=l;i<=mid;i++)
+        {
+            cout<<a[i]<<" ";
+        }
+        cout<<endl;
+        for(int i=mid+1;i<=r;i++)
+        {
+            cout<<a[i]<<" ";
+        }
+        cout<<endl;
 
     }
 }
