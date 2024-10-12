@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "Live Preview",
+      "workspacePath": "d:\\Web and Programming\\Phitron\\Modules",
+      "problemMatcher": [],
+      "label": "Live Preview: Run Server",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
